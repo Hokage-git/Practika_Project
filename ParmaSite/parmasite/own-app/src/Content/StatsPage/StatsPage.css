@@ -1,0 +1,33 @@
+.stats__container {
+    background: url('./Background.png');
+    width: 100%;
+    max-width: calc(1160px - 4%);
+    height: 600px;
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+}
+
+.percent__stat{
+    text-align: center;
+    min-width: 50%;
+    max-width: 50%;
+    font: 100% "Proxima Nova", sans-serif;
+    font-size: 20px;
+    color: #323e49;
+    font-weight: bold;
+    user-select: none;
+}
+
+.percent__depart__stat{
+    text-align: center;
+    max-width: 50%;
+    min-width: 50%;
+    font: 100% "Proxima Nova", sans-serif;
+    font-size: 20px;
+    color: #323e49;
+    font-weight: bold;
+    user-select: none;
+}
+

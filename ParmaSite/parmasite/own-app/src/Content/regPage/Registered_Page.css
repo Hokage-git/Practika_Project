@@ -1,0 +1,44 @@
+.content__container{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Title__Text{
+    margin-bottom: 5rem;
+    font-family: "Proxima Nova", sans-serif;
+    color: #323e49;
+    font-size: 70px;
+    user-select: none;
+}
+
+.Unreg__PageContext{
+    margin-bottom: 5rem;
+    font-family: "Proxima Nova", sans-serif;
+    color: #323e49;
+    font-size: 40px;
+    user-select: none;
+    line-height: 4rem;
+}
+
+.d__block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    pointer-events: all;
+    opacity: 1;
+    position: relative;
+}
+
+.d__block.disabled{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+}
+.d__block img{
+
+}
+

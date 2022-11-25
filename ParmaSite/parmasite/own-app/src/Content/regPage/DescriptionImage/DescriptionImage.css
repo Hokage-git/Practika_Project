@@ -1,0 +1,54 @@
+.block{
+    --main-bg-color: brown;
+    position: relative;
+    border-radius: 30px;
+    background-color: #ffffff;
+    aspect-ratio: 1/1;
+    min-width: calc(30% + 2px);
+    width: auto;
+    max-width: calc(30% + 2px);
+    cursor: pointer;
+    color: white;
+    font: 100% "Proxima Nova", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.front__block{
+    backface-visibility: hidden;
+    position: relative;
+    border-radius: 30px;
+    height: 100%;
+    cursor: pointer;
+    transition: 500ms;
+    z-index: 1;
+}
+
+.front__block img{
+    border-radius: 30px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.back__block{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: 500ms;
+}
+
+.block:hover .front__block{
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+.block:hover .back__block{
+    transform: rotateY(0deg);
+    z-index: 2;
+}

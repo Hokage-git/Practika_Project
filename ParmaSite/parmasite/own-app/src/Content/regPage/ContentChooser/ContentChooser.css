@@ -1,0 +1,34 @@
+.chooser__container{
+    text-align: right;
+    margin-bottom: 80px;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.Active{
+    color: #EC1C24;
+    margin-left: 55px;
+    text-decoration: none;
+    position: relative;
+    user-select: none;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.notActive{
+    color: #323E49;
+    margin-left: 55px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    transition: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.chooser__container a:hover{
+    color: #EC1C24;
+}

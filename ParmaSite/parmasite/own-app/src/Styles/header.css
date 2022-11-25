@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Parma__Logo{
+    flex: 0 0 auto;
+    width: 245px;
+    height: auto;
+    cursor: pointer;
+}
+
+.Login{
+    align-items: center;
+    display: flex;
+    font: 100% "Proxima Nova", sans-serif;
+    font-size: 24px;
+    color: #323e49;
+    font-weight: bold;
+    user-select: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.Login:hover{
+    color: #EC1C24;
+}
