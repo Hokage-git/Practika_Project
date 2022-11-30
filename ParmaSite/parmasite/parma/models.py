@@ -47,3 +47,14 @@ class Answer(models.Model):
     class Meta:
         verbose_name = 'Ответ'
         verbose_name_plural = 'Ответы'
+
+class Windows(models.Model):
+    frontImgSrc = models.ImageField(upload_to = 'own-app/src/images', verbose_name="Внешний вид тест")
+    backText = models.CharField(max_length=200, verbose_name= "Описание теста")
+    state = models.BooleanField(verbose_name= "Выполнение теста")
+    def __str__(self):
+        return self.backText
+    class Meta:
+        verbose_name = "Плитки теста"
+        verbose_name_plural = "Плитки теста"
+

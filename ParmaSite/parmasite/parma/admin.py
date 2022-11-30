@@ -7,7 +7,13 @@ class PersonAdmin(admin.ModelAdmin):
 
     search_fields = ('SecondName', 'FirstName', 'LastName')
 
-#admin.site.register(Person, PersonAdmin)
+
+class WindowsAdmin(admin.ModelAdmin):
+    list_display = ('frontImgSrc', 'backText', 'state')
+
+
+admin.site.register(Windows)
+
 
 admin.site.site_title = 'Личный кабинет администратора'
 admin.site.site_header = 'Личный кабинет администратора'
