@@ -30,7 +30,7 @@ const ContentChooser = () => {
 
         <div className={isActive === 2 ? "d__block" : "d__block disabled"}>
           {tests.map((test) => (
-            !(test.state == true) ? (<DescriptionImage test={test} key={test.id}/>) : null
+            (test.state != true) ? (<DescriptionImage test={test} key={test.id}/>) : null
             ))}
         </div>
 

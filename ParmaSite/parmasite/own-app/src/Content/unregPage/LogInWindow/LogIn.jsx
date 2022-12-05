@@ -9,7 +9,7 @@ const LogIn = ({active,setActive}) => {
   const [users,setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://my-json-server.typicode.com/Hokage-git/Practika_Project/tree/main/ParmaSite/parmasite')
+    fetch('./nvxcmnv.json')
       .then(res => {
         return res.json()
       })

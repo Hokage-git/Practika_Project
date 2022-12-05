@@ -2,9 +2,11 @@ import React, {useState} from "react";
 import MainRegPage from "./Pages/MainRegPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UnregPageJS from "./Pages/UnregPageJS";
-import Profile from "./Pages/profile";
+import Test from "./Pages/Test";
 
 function App() {
+
+  const [testUrl,setTestUrl] = useState("/")
 
   return (
       <div className = "App">
@@ -12,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/home" element={<MainRegPage/>}/>
             <Route path="/" element={<UnregPageJS/>}/>
-            <Route path="/profile" element={<Profile/>}/>
+            <Route path={"/test"} element={<Test/>}/>
           </Routes>
         </Router>
       </div>
