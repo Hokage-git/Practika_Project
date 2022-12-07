@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import './Registered_Page.css';
+import DescriptionImage from "./DescriptionImage/DescriptionImage";
+import testImg from '../unregPage/LogInWindow/ParmaTeam.jpg';
 import ContentChooser from "./ContentChooser/ContentChooser";
+import StatsPage from "../StatsPage/StatsPage";
 
 const RegPage = () => {
 

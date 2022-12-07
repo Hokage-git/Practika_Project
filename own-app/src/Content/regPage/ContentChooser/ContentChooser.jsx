@@ -8,11 +8,8 @@ const ContentChooser = () => {
   const [isActive,setActive] = useState(1)
 
   const [tests,setTests] = useState([
-    {id: 1, frontImgSrc: testImg, backText: 'Description', state:true},
-    {id: 2, frontImgSrc: testImg, backText: 'Description', state:true},
-    {id: 3, frontImgSrc: testImg, backText: 'Description', state:false},
-    {id: 4, frontImgSrc: testImg, backText: 'Description', state:true},
-    {id: 5, frontImgSrc: testImg, backText: 'Description', state:false},
+    {id: 1, frontImgSrc: testImg, backText: 'Этот тест направлен на получение первого опыта взаимодействия с сайтом', state:true},
+    {id: 2, frontImgSrc: testImg, backText: 'Этот тест уже пройден', state:false},
   ]);
 
     return (
@@ -24,13 +21,13 @@ const ContentChooser = () => {
         </div>
         <div className={isActive === 1 ? "d__block" : "d__block disabled"}>
           {tests.map((test) => (
-            (test.state == true) ? (<DescriptionImage test={test} key={test.id}/>) : null
+            (test.state === true) ? (<DescriptionImage test={test} key={test.id}/>) : null
           ))}
         </div>
 
         <div className={isActive === 2 ? "d__block" : "d__block disabled"}>
           {tests.map((test) => (
-            (test.state != true) ? (<DescriptionImage test={test} key={test.id}/>) : null
+            (test.state === false) ? (<DescriptionImage test={test} key={test.id}/>) : null
             ))}
         </div>
 

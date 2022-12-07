@@ -1,0 +1,23 @@
+.answerText{
+    font: 100% "Open Sans", sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    color: #323E49;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.answerTextActive{
+    font: 100% "Open Sans", sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    color: #EC1C24;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.answerText:hover{
+    color: #EC1C24;
+}

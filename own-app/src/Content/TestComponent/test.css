@@ -1,0 +1,40 @@
+.test__container{
+    background: url('./Background.png');
+    width: 100%;
+    max-width: calc(1160px - 4%);
+    height: auto;
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+
+.test__container h1{
+    font: 100% "Open Sans", sans-serif;
+    color: #323e49;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px;
+    position: relative;
+}
+
+.test__container button{
+    margin-top: 30px;
+}
+
+.description{
+    font: 100% "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #323e49;
+    font-weight: bold;
+    word-break: break-all;
+    white-space: normal;
+    position: relative;
+}
+
+.description_Non_Vis{
+    opacity: 0;
+    pointer-events: none;
+
+}

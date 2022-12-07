@@ -2,21 +2,28 @@ import React, {useEffect, useState} from 'react';
 import "./LogIn.css";
 import LoginIMG from "./ParmaTeam.jpg";
 
+const users = [
+  {
+    username: 'maksim1',
+    password: 'maksim2'
+  },
+  {
+    username: 'sonya1',
+    password: 'sonya2'
+  },
+  {
+    username: 'vlada1',
+    password: 'vlada2'
+  },
+  {
+    username: 'gosha1',
+    password: 'gosha2'
+  }
+]
 
 const LogIn = ({active,setActive}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [users,setUsers] = useState([]);
-
-  useEffect(() => {
-    fetch('./nvxcmnv.json')
-      .then(res => {
-        return res.json()
-      })
-      .then(userData => {
-        setUsers(userData)
-      });
-  }, [])
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -26,9 +33,8 @@ const LogIn = ({active,setActive}) => {
   }
 
   const CheckUser = () => {
-    console.log(users);
-    const userCheck = users.find(user => (users.username === email && users.password === password));
-    if(userCheck){
+    const usercheck =  users.find(user => (user.username === email && user.password === password));
+    if(usercheck){
       window.location.assign('http://localhost:3000/home');
     }
   }
@@ -51,6 +57,6 @@ const LogIn = ({active,setActive}) => {
       </div>
     </div>
   );
-}
+};
 
 export default LogIn;
