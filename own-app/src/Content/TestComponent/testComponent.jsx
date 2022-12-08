@@ -38,9 +38,11 @@ const TestComponent = () => {
 
 	function TestStart(){
 		setIsStart(false)
-		setI(i+1)
-		if(i>count){
+		if(i > count){
 			window.location.assign("http://localhost:3000/home")
+		}
+		else{
+			setI(i+1)
 		}
 		console.log(i);
 	}
