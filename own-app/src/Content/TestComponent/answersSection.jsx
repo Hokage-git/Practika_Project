@@ -7,9 +7,10 @@ const AnswersSection = (props) => {
 	return (
 		<div>
 			<div className={"question"}>{props.test.questionText}</div>
+			<img className={props.test.ImageUrl.length === 0 ? "quest__imgNotActive" : "quest__img"} src={props.test.ImageUrl}/>
 			<div className={"answer"}>
 			{props.test.answers.map((answer) =>
-				<AnswerComponent answer = {answer} active = {active} setActive = {setActive}/>
+				<AnswerComponent answer = {answer} isPart = {props.test.IsPart} active = {active} setActive = {setActive}/>
 			)}
 			</div>
 		</div>

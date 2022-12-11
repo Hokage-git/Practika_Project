@@ -31,3 +31,24 @@
     user-select: none;
 }
 
+.download__btn{
+    margin-top: 20px;
+    color: #fff;
+    background-color: #EC1C24;
+    border-radius: 30px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px;
+    transition: .2s;
+    border: #EC1C24 solid 3px;
+}
+
+.download__btn:hover{
+    background-color: white;
+    color: #EC1C24;
+    border-color: #EC1C24;
+    cursor: pointer;
+}
+
+

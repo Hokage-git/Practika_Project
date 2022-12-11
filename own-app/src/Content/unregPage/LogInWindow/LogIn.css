@@ -92,7 +92,25 @@
     font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     caret-color: #323E49;
+}
 
+.pas__input{
+    text-align: center;
+    height: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    color: #323E49;
+    border: 2px solid #999;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    caret-color: #323E49;
+}
+
+.pas__input::placeholder{
+    color: rgba(0,0,0,0.2);
 }
 
 .reg__input::placeholder{
@@ -108,7 +126,7 @@
     font-size: 2rem;
     padding: 20px 35px 20px 35px;
     transition: .2s;
-    border: #ffffff solid 3px;
+    border: #EC1C24 solid 3px;
 }
 
 .reg__btn:hover {

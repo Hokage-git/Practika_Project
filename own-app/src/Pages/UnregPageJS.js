@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import logo from "../ParmaLogo.svg";
 import LogIn from "../Content/unregPage/LogInWindow/LogIn";
 import Tail from "../Content/Tail/Tail";
+import HelloImg from "./1576876682507.jfif"
 
 const UnregPageJs = () => {
     const [loginActive, setLoginActive] = useState(false);
@@ -20,6 +21,7 @@ const UnregPageJs = () => {
             <h2 className={"Unreg__PageContext"}>
                 Для начала своего пути в нашей компании, просто авторизуйтесь в системе для получения доступа к тестам.
             </h2>
+            <img className={"hello__img"} src={HelloImg}/>
             <LogIn active={loginActive} setActive={setLoginActive}/>
         </div>
         <Tail/>

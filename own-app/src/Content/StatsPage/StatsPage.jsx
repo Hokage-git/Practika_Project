@@ -55,30 +55,33 @@ const StatsPage = () => {
 
 
 	return (
-		<div className={"stats__container"}>
-			<div className={"percent__stat"}>
-				Успешность прохождения
-				<Bar
-					type={"bar"}
-					data={barChartData}
-					width={500}
-					height={500}
-					options={{
-						maintainAspectRatio: false,
-						y: { suggestedMin: 0,
-							suggestedMax: 100}
-				}}
-				/>
+		<div>
+			<div className={"stats__container"}>
+				<div className={"percent__stat"}>
+					Успешность прохождения
+					<Bar
+						type={"bar"}
+						data={barChartData}
+						width={500}
+						height={500}
+						options={{
+							maintainAspectRatio: false,
+							y: { suggestedMin: 0,
+								suggestedMax: 100}
+					}}
+					/>
+				</div>
+				<div className={"percent__depart__stat"}>
+					Успешность прохожденния в подразделениях
+					<Pie
+						type={'pie'}
+						data={pieChartData}
+						width={500}
+						height={500}
+					/>
+				</div>
 			</div>
-			<div className={"percent__depart__stat"}>
-				Успешность прохожденния в подразделениях
-				<Pie
-					type={'pie'}
-					data={pieChartData}
-					width={500}
-					height={500}
-				/>
-			</div>
+			<button className={"download__btn"}> Скачать </button>
 		</div>
 	);
 };

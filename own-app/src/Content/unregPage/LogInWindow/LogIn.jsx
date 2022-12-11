@@ -36,6 +36,11 @@ const LogIn = ({active,setActive}) => {
     const usercheck =  users.find(user => (user.username === email && user.password === password));
     if(usercheck){
       window.location.assign('http://localhost:3000/home');
+    }else{
+      let reg_input = document.querySelector('.reg__input');
+      let pas_input = document.querySelector('.pas__input');
+      pas_input.style.backgroundColor = '#F2BFBF';
+      reg_input.style.backgroundColor = '#F2BFBF';
     }
   }
 
@@ -47,7 +52,7 @@ const LogIn = ({active,setActive}) => {
             <div className={"reg__text"}>Логин</div>
             <input className={"reg__input"} placeholder={"Введите логин"} type={"login"} onChange={(e) => setEmail(e.target.value)}/>
             <div className={"reg__text"}>Пароль</div>
-            <input className={"reg__input"} placeholder={"Введите пароль"} type={"password"} onChange={(e) => setPassword(e.target.value)}/>
+            <input className={"pas__input"} placeholder={"Введите пароль"} type={"password"} onChange={(e) => setPassword(e.target.value)}/>
             <button className={"reg__btn"} onClick={CheckUser} type={"submit"}>Вход</button>
           </div>
         </div>
